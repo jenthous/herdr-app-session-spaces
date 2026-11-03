@@ -1,6 +1,6 @@
 # Session spaces for the Herdr app
 
-A spaces sidebar for the [Herdr app](https://herdr.dev) that shows one session (machine) at a time, cloned from Herdr's built-in `spaces` mod (0.1.11).
+A spaces sidebar for the Herdr app that shows one session (machine) at a time, cloned from Herdr's built-in `spaces` mod (0.1.11).
 
 ## Features
 
