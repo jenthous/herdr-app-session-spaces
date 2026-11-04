@@ -1,5 +1,5 @@
 // Linear issue states for spaces named after an issue. Mods can't import another mod's files, so this
-// is a small copy of the linear mod's key lookup and state icon (its icons are used by path).
+// is a small copy of the linear mod's key lookup and state icons (copied into icons/, so it needs nothing else).
 
 import { readTextFile, home, exec } from "herdr";
 
@@ -40,11 +40,11 @@ export async function issueStates(key, ids) {
   return Object.fromEntries((body.data?.issues?.nodes ?? []).map((i) => [i.identifier, i.state]));
 }
 
-// The linear mod's state icons: dashed circle backlog, empty todo, half in progress, three-quarter review,
+// The state icons (the linear mod's, copied): dashed circle backlog, empty todo, half in progress, three-quarter review,
 // check done, cross canceled.
 export function stateIcon(state) {
   const type = state?.type;
-  if (type === "started" && /review|리뷰/i.test(state?.name ?? "")) return "mods/linear/icons/state-review.svg";
+  if (type === "started" && /review|리뷰/i.test(state?.name ?? "")) return "mods/session-spaces/icons/state-review.svg";
   const known = ["backlog", "triage", "unstarted", "started", "completed", "canceled"];
-  return `mods/linear/icons/state-${known.includes(type) ? type : type === "duplicate" ? "canceled" : "unstarted"}.svg`;
+  return `mods/session-spaces/icons/state-${known.includes(type) ? type : type === "duplicate" ? "canceled" : "unstarted"}.svg`;
 }
