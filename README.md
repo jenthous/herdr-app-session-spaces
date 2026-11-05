@@ -7,7 +7,7 @@ A spaces sidebar for the Herdr app, cloned from Herdr's built-in `spaces` mod (0
 ## Features
 
 - **Space state.** Where the avatar was: working spins, blocked (or failed) is a red dot, done is a check, idle an empty ring. Each a different shape, not just a color.
-- **Colors when you want them.** Right-click a space for Herdr's items plus a row of six colors and `×` for none. A colored space's row is tinted with it; new spaces start with none. Colors survive restarts, also for spaces on machines that connect later.
+- **Colors when you want them.** Right-click a space for Herdr's items plus a row of six colors, `×` for none and `+` for any color (a palette and a `#rrggbb` field). A colored space gets a thin stripe on its left edge; new spaces start with none. Colors survive restarts, also for spaces on machines that connect later.
 - **Linear issues (optional).** A space whose name (or branch) has an identifier like `ENG-142` shows it as a chip with the issue's state icon in the state's color, and the name without the identifier. Click it to open the issue: in the [Linear mod](https://github.com/jenthous/herdr-app-linear)'s window when it's installed, else in the browser. Needs a Linear API key; without one, nothing is asked or shown.
 - **One session or all.** Next to the [machine-switch](https://github.com/jenthous/herdr-machine-rail) mod in a layout, it shows only the session that mod chose. Without it, every machine's spaces under a header per machine (fold it, `+` for a new space there), as Herdr's own list.
 - Kept from Herdr's list: worktrees under their checkout; after a name, the repo, branch and ahead/behind of its first terminal when unusual; click to switch, drag to reorder, a compact rail when the sidebar is narrow.
